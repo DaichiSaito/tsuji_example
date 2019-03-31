@@ -57,3 +57,4 @@ production:
   username: daichisaito
   password: <%= Rails.application.credentials.database_password %>
   host: tsuji-example-db-instance.cekradhmzat3.ap-northeast-1.rds.amazonaws.com
+  socket: /tmp/mysql.sock
