@@ -53,7 +53,7 @@ test:
 #
 production:
   <<: *default
-  database: tsuji-example-db-instance
+  database: tsuji_example
   username: daichisaito
   password: <%= Rails.application.credentials.database_password %>
-  socket: /var/lib/mysql/mysql.sock
+  host: tsuji-example-db-instance.cekradhmzat3.ap-northeast-1.rds.amazonaws.com
