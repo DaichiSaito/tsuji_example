@@ -54,5 +54,6 @@ test:
 production:
   <<: *default
   database: tsuji_example_production
-  username: tsuji_example
-  password: <%= ENV['TSUJI_EXAMPLE_DATABASE_PASSWORD'] %>
+  username: daichisaito
+  password: <%= Rails.application.credentials.database_password %>
+  socket: /var/lib/mysql/mysql.sock
